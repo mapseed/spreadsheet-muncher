@@ -1,9 +1,6 @@
 import csv
 from geopy.geocoders import Nominatim
 
-#list to contain Title and Description from rows of input file
-#rowList = []
-
 #List of headers for the output csv to be imported into MapBox
 mapboxHeaders = ['Title', 'Description', 'Lat', 'Long']
 #List of headers from input csv file that go into the description field of output csv file
@@ -14,13 +11,13 @@ with open('Georgetown_Import.ods_GT_Matrix.csv', 'r') as csvinput, open('GT_MapB
 
 	#Create a dictionary reader to iterate through the rows of the input file, accessing by names in 1st row
 	reader = csv.DictReader(csvinput)
-	#Create a writer to write one row at a time to the output file
-	writer = csv.writer(csvoutput, quoting=csv.QUOTE_MINIMAL)
-	#Create a geocoder to geocode locations in Georgetowh, Seattle, WA
-	geocoder = Nominatim(format_string="%s, Georgetown, Seattle WA")
+	#Create a dictionary writer for the output file, with mapboxHeaders as the ordered list of keys
+	writer = csv.DictWriter(csvoutput, mapboxHeaders, quoting=csv.QUOTE_MINIMAL)
+	#Write mapboxHeaders as the 1st row of the output file
+	writer.writeheader()
 
-	#Write the header row to the output csv
-	writer.writerow(mapboxHeaders)
+	#Create a geocoder to geocode locations in Georgetown, Seattle, WA
+	geocoder = Nominatim(format_string="%s, Seattle WA")
 	
 	#Iterate through rows of input file, and write a line to the output file for each one
 	for row in reader:
@@ -37,18 +34,14 @@ with open('Georgetown_Import.ods_GT_Matrix.csv', 'r') as csvinput, open('GT_MapB
 			print title
 			print description
 
-			#Set default latitude and longitude in case location can't be found
-			lat = 0 #"44.666"
-			lon = 0 #"-12.123"
-
 			#Geocode the location from the 'Location' column -- increase timeout to 10s to avoid GeocoderTimedOut exception
 			location = geocoder.geocode(row['Location'], timeout=10)
-			#Get the latitude and longitude if a valid location was found
-			if location != None:
-				lat = location.latitude
-				lon = location.longitude
+			#Get the latitude and longitude if a valid location was found (i.e. location != None), 
+			#and otherwise set the values to 0.
+			(lat, lon) = (location.latitude, location.longitude) if location else (0, 0) #(47.55,-122.33)
 
 			#Print for testing:
 			print row['Location'] + ": (%f, %f)\n" %(lat, lon)
 
-			writer.writerow([title, description, lat, lon])
+			#Using a dictionary writer ensures that the row contents are matched to the correct columns, even if headers are rearranged
+			writer.writerow({'Title':title, 'Description':description, 'Lat':lat, 'Long':lon})
