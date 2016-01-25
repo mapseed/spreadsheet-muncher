@@ -9,7 +9,7 @@ import csv
 from geopy.geocoders import GeocodeFarm as farm_geocoder
 from geopy.geocoders import GoogleV3 as google_geocoder
 
-IMPORT_CSV_FILE = '../Georgetown_Import.ods_GT_Matrix.csv'
+IMPORT_CSV_FILE = 'data/Georgetown_Import.ods_GT_Matrix.csv'
 
 # The bounding box of the viewport within which to bias geocode results
 # more prominently (only on GoogleV3).
