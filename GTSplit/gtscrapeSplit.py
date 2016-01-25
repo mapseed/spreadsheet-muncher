@@ -40,7 +40,7 @@ def splitting(targetCategory, short):
 			#Only look at rows with nonempty Title field
 			if title != "" and row['Category']==targetCategory:
 				#Create the description string from the desired columns of input file
-				description = "<h2>%s</h2>\n<p>%s</p>\n" % ("Title", row['Slug'])
+				description = "<h1>%s</h1>\n<p>%s</p>\n" % ("Title", row['Slug'])
 				for header in descriptionHeaders:
 					if row[header] != "":
 						description += "<h2>%s</h2>\n<p>%s</p>\n" % (header, row[header])
