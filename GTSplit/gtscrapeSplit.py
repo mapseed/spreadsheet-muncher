@@ -102,11 +102,12 @@ def splitting(targetCategory, short):
                 # If the last two characters of the description are ", "
                 # then remove them.
                 if description[-2:] == ", ":
-                    description  = description[:-2]
+                    description = description[:-2]
 
                 # Close the <p> tag for the studies, and add the contents of
                 # the 'Category' column to the description
-                description += "</p>\n<h5>Category:</h5>\n<p>" + row['Category'] + "</p>\n"
+                description += "</p>\n<h5>Category:</h5>\n<p>" + \
+                               row['Category'] + "</p>\n"
 
                 # Print for testing:
                 print(title)
@@ -135,7 +136,8 @@ def splitting(targetCategory, short):
                     print(row['Location'] + ": (%f, %f)\n" % (lat, lon))
 
                 # Using a dictionary writer ensures that the row contents are
-                # matched to the correct columns, even if headers are rearranged
+                # matched to the correct columns, even if headers are
+                # rearranged
                 # Sorting the data for values in 'Progress' column
                 if row['Progress'] == 'Complete':
                     writerComp.writerow(
