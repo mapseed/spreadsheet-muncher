@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-Landlord Training,"<h2>Title</h2>
-<p>Landlord Training</p>
+Landlord Training,"<h1>Landlord Training</h1>
 <h2>Goal</h2>
 <p>Landlord Training</p>
 <h2>Progress Detail</h2>
@@ -13,8 +12,7 @@ Landlord Training,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Land Use</p>
 ",0,0
-Neighborhood Anchor Designation,"<h2>Title</h2>
-<p>Neighborhood Anchor Designation</p>
+Neighborhood Anchor Designation,"<h1>Neighborhood Anchor Designation</h1>
 <h2>Goal</h2>
 <p>Neighborhood Anchor Designation</p>
 <h2>Progress Detail</h2>

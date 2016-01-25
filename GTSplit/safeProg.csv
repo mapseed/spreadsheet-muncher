@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-"Community Policing, storefront presence","<h2>Title</h2>
-<p>Community Policing, storefront presence</p>
+"Community Policing, storefront presence","<h1>Community Policing, storefront presence</h1>
 <h2>Goal</h2>
 <p>Community Policing, storefront presence</p>
 <h2>Progress Detail</h2>
@@ -15,8 +14,7 @@ Title,Description,Lat,Long
 <h5>Category:</h5>
 <p>Safety</p>
 ",0,0
-Hotel concerns,"<h2>Title</h2>
-<p>hotels</p>
+hotels,"<h1>Hotel concerns</h1>
 <h2>Goal</h2>
 <p>Evaluate area around hotels</p>
 <h2>Status</h2>
@@ -31,8 +29,7 @@ Hotel concerns,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Safety</p>
 ",0,0
-Improve Alley Lighting,"<h2>Title</h2>
-<p>Improve Alley Lighting</p>
+Improve Alley Lighting,"<h1>Improve Alley Lighting</h1>
 <h2>Goal</h2>
 <p>Improve Alley Lighting</p>
 <h2>Progress Detail</h2>

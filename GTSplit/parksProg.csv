@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-Gateway Park,"<h2>Title</h2>
-<p>Gateway Park</p>
+Gateway Park,"<h1>Gateway Park</h1>
 <h2>Goal</h2>
 <p>Expand and enhance Gateway Park</p>
 <h2>Progress Detail</h2>
@@ -15,8 +14,7 @@ Gateway Park,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Parks and Open Space</p>
 ",0,0
-Georgetown Playfield,"<h2>Title</h2>
-<p>Georgetown Playfield</p>
+Georgetown Playfield,"<h1>Georgetown Playfield</h1>
 <h2>Goal</h2>
 <p>Improve the Playfield / encourage local use of Playfield</p>
 <h2>Progress Detail</h2>
@@ -29,8 +27,7 @@ Georgetown Playfield,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Parks and Open Space</p>
 ",0,0
-More parks along the river,"<h2>Title</h2>
-<p>More parks along the river</p>
+More parks along the river,"<h1>More parks along the river</h1>
 <h2>Goal</h2>
 <p>More parks along the river</p>
 <h2>Progress Detail</h2>
@@ -43,8 +40,7 @@ More parks along the river,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Parks and Open Space</p>
 ",0,0
-Ruby Chow Park,"<h2>Title</h2>
-<p>Ruby Chow Park</p>
+Ruby Chow Park,"<h1>Ruby Chow Park</h1>
 <h2>Goal</h2>
 <p>Expand and enhance Ruby Chow Park</p>
 <h2>Progress Detail</h2>

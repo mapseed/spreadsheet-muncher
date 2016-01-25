@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-Anti-graffiti campaign,"<h2>Title</h2>
-<p>Anti-graffiti campaign</p>
+Anti-graffiti campaign,"<h1>Anti-graffiti campaign</h1>
 <h2>Goal</h2>
 <p>Anti-graffiti campaign</p>
 <h2>Progress Detail</h2>
@@ -13,8 +12,7 @@ Anti-graffiti campaign,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-Community Festivals,"<h2>Title</h2>
-<p>Community Festivals</p>
+Community Festivals,"<h1>Community Festivals</h1>
 <h2>Goal</h2>
 <p>Community Festivals</p>
 <h2>Progress Detail</h2>
@@ -25,8 +23,7 @@ Community Festivals,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-"Encourage clean industry, better ecology standards for business","<h2>Title</h2>
-<p>Encourage clean industry, better ecology standards for business</p>
+"Encourage clean industry, better ecology standards for business","<h1>Encourage clean industry, better ecology standards for business</h1>
 <h2>Goal</h2>
 <p>Encourage clean industry, better ecology standards for business</p>
 <h2>Progress Detail</h2>
@@ -41,8 +38,7 @@ Community Festivals,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-Neighborhood Clean-ups,"<h2>Title</h2>
-<p>Neighborhood Clean-ups</p>
+Neighborhood Clean-ups,"<h1>Neighborhood Clean-ups</h1>
 <h2>Goal</h2>
 <p>Neighborhood Clean-ups</p>
 <h2>Progress Detail</h2>
@@ -57,8 +53,7 @@ Neighborhood Clean-ups,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-Old City Hall,"<h2>Title</h2>
-<p>Old City Hall</p>
+Old City Hall,"<h1>Old City Hall</h1>
 <h2>Goal</h2>
 <p>Mini-City Hall in Old City Hall with bulletin board, meeting rooms. </p>
 <h2>Progress Detail</h2>
@@ -71,8 +66,7 @@ Old City Hall,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-Public art by local artists,"<h2>Title</h2>
-<p>Public art by local artists</p>
+Public art by local artists,"<h1>Public art by local artists</h1>
 <h2>Goal</h2>
 <p>Public art by local artists</p>
 <h2>Progress Detail</h2>
@@ -87,8 +81,7 @@ Public art by local artists,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-South Seattle College,"<h2>Title</h2>
-<p>South Seattle College</p>
+South Seattle College,"<h1>South Seattle College</h1>
 <h2>Goal</h2>
 <p>Establish a community center with computer lab and job center</p>
 <h2>Progress Detail</h2>
@@ -101,8 +94,7 @@ South Seattle College,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-Steam Plant,"<h2>Title</h2>
-<p>Steam Plant</p>
+Steam Plant,"<h1>Steam Plant</h1>
 <h2>Goal</h2>
 <p>City support and endorsement of the Steam Plant Museum</p>
 <h2>Progress Detail</h2>
@@ -117,8 +109,7 @@ Steam Plant,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-Tree plantings,"<h2>Title</h2>
-<p>Tree plantings</p>
+Tree plantings,"<h1>Tree plantings</h1>
 <h2>Goal</h2>
 <p>Tree plantings</p>
 <h2>Progress Detail</h2>

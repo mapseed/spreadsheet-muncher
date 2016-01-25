@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-8th Ave South,"<h2>Title</h2>
-<p>8th ave</p>
+8th ave,"<h1>8th Ave South</h1>
 <h2>Goal</h2>
 <p>Maintain sidewalk on 8th Ave S to allow peds to walk safely to the park</p>
 <h2>Progress Detail</h2>
@@ -15,8 +14,7 @@ Title,Description,Lat,Long
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Airport Way,"<h2>Title</h2>
-<p>airport 13th crossswalks</p>
+airport 13th crossswalks,"<h1>Airport Way</h1>
 <h2>Goal</h2>
 <p>Crosswalks on Airport Way</p>
 <h2>Progress Detail</h2>
@@ -31,8 +29,7 @@ Airport Way,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Airport Way stop lights,"<h2>Title</h2>
-<p>airport stop lights</p>
+airport stop lights,"<h1>Airport Way stop lights</h1>
 <h2>Goal</h2>
 <p>Add stop lights along Airport Way and make more pedestrian friendly</p>
 <h2>Progress Detail</h2>
@@ -43,8 +40,7 @@ Airport Way stop lights,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Bike & Pedestrian connections,"<h2>Title</h2>
-<p>Bike and Pedestrian connections</p>
+Bike and Pedestrian connections,"<h1>Bike & Pedestrian connections</h1>
 <h2>Goal</h2>
 <p>Ped and bike connections with South Park and Beacon Hill. Connect GT with the urban trail system. </p>
 <h2>Status</h2>
@@ -61,8 +57,7 @@ Bike & Pedestrian connections,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Georgetown Steam Plant,"<h2>Title</h2>
-<p>Georgetown Steam Plant</p>
+Georgetown Steam Plant,"<h1>Georgetown Steam Plant</h1>
 <h2>Goal</h2>
 <p>Pedestrian and bicycle connections to the GT Steam Plant</p>
 <h2>Progress Detail</h2>
@@ -73,8 +68,7 @@ Georgetown Steam Plant,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Nebraska Street.,"<h2>Title</h2>
-<p>Nebraska Street.</p>
+Nebraska Street.,"<h1>Nebraska Street.</h1>
 <h2>Goal</h2>
 <p>Sidewalk, paving, curb, gutter, and drainage along Nebraska</p>
 <h2>Progress Detail</h2>
@@ -85,8 +79,7 @@ Nebraska Street.,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Planting Strip – Corson & Ellis,"<h2>Title</h2>
-<p>Planting Strip – Corson and Ellis</p>
+Planting Strip – Corson and Ellis,"<h1>Planting Strip – Corson & Ellis</h1>
 <h2>Goal</h2>
 <p>Widen the planting strip on Corson and Ellis</p>
 <h2>Status</h2>
@@ -99,8 +92,7 @@ Planting Strip – Corson & Ellis,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Traffic Calming,"<h2>Title</h2>
-<p>Traffic Calming</p>
+Traffic Calming,"<h1>Traffic Calming</h1>
 <h2>Goal</h2>
 <p>Use traffic calming to protect residential streets</p>
 <h2>Progress Detail</h2>
@@ -115,8 +107,7 @@ Traffic Calming,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Train station stop,"<h2>Title</h2>
-<p>Train station stop</p>
+Train station stop,"<h1>Train station stop</h1>
 <h2>Goal</h2>
 <p>Train station stop</p>
 <h2>Progress Detail</h2>

@@ -1,7 +1,6 @@
 Title,Description,Lat,Long
 Title,Description,Lat,Long
-6th Ave Improvements,"<h2>Title</h2>
-<p>6th ave</p>
+6th ave,"<h1>6th Ave Improvements</h1>
 <h2>Goal</h2>
 <p>Parking and pedestrian improvements along 6th Ave S.</p>
 <br><br>
@@ -10,8 +9,7 @@ Title,Description,Lat,Long
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Bike Sharrows,"<h2>Title</h2>
-<p>Bike Sharrows</p>
+Bike Sharrows,"<h1>Bike Sharrows</h1>
 <h2>Goal</h2>
 <p>Bike sharrows on 1st Ave S from Marginal to Dawson</p>
 <br><br>
@@ -20,8 +18,7 @@ Bike Sharrows,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Bike Sharrows,"<h2>Title</h2>
-<p>Bike Sharrows</p>
+Bike Sharrows,"<h1>Bike Sharrows</h1>
 <h2>Goal</h2>
 <p>Bike sharrows on 6th Ave S from River to Lucile</p>
 <br><br>
@@ -30,8 +27,7 @@ Bike Sharrows,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Bike Sharrows,"<h2>Title</h2>
-<p>Bike Sharrows</p>
+Bike Sharrows,"<h1>Bike Sharrows</h1>
 <h2>Goal</h2>
 <p>Bike sharrows on Harney</p>
 <br><br>
@@ -40,8 +36,7 @@ Bike Sharrows,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Bike Sharrows,"<h2>Title</h2>
-<p>Bike Sharrows</p>
+Bike Sharrows,"<h1>Bike Sharrows</h1>
 <h2>Goal</h2>
 <p>Bike sharrows on Vale</p>
 <br><br>
@@ -50,8 +45,7 @@ Bike Sharrows,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Carlton Ave,"<h2>Title</h2>
-<p>Carlton Ave</p>
+Carlton Ave,"<h1>Carlton Ave</h1>
 <h2>Goal</h2>
 <p>Bike boulevard on Carleton Ave</p>
 <br><br>
@@ -60,8 +54,7 @@ Carlton Ave,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Carstens and Airport Way,"<h2>Title</h2>
-<p>Carstens and Airport Way</p>
+Carstens and Airport Way,"<h1>Carstens and Airport Way</h1>
 <h2>Goal</h2>
 <p>New traffic signal at Carstens and Airport Way</p>
 <br><br>
@@ -70,8 +63,7 @@ Carstens and Airport Way,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Corson St. & 6th Ave S.,"<h2>Title</h2>
-<p>Corson St. and 6th Ave S.</p>
+Corson St. and 6th Ave S.,"<h1>Corson St. & 6th Ave S.</h1>
 <h2>Goal</h2>
 <p>Bike/Ped pathway between Corson and 6th Ave S (between DOT and SSCC)</p>
 <br><br>
@@ -80,8 +72,7 @@ Corson St. & 6th Ave S.,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Doris and Airport Way,"<h2>Title</h2>
-<p>Doris and Airport Way</p>
+Doris and Airport Way,"<h1>Doris and Airport Way</h1>
 <h2>Goal</h2>
 <p>New traffic signal at Doris and Airport Way</p>
 <br><br>
@@ -90,8 +81,7 @@ Doris and Airport Way,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Freeway Exit,"<h2>Title</h2>
-<p>Freeway Exit</p>
+Freeway Exit,"<h1>Freeway Exit</h1>
 <h2>Goal</h2>
 <p>Close the freeway exit at Corson and the entrance at Bailey - relocate to Lucile and Albro</p>
 <h2>Status</h2>
@@ -102,8 +92,7 @@ Freeway Exit,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Freeway Signage,"<h2>Title</h2>
-<p>Freeway Signage</p>
+Freeway Signage,"<h1>Freeway Signage</h1>
 <h2>Goal</h2>
 <p>Add freeway signage that identifies ""Georgetown"" in the Corson/Michigan exit</p>
 <br><br>
@@ -112,8 +101,7 @@ Freeway Signage,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Georgetown Shuttle,"<h2>Title</h2>
-<p>Georgetown Shuttle</p>
+Georgetown Shuttle,"<h1>Georgetown Shuttle</h1>
 <h2>Goal</h2>
 <p>Georgetown shuttle to connect key points with King County Airport</p>
 <br><br>
@@ -122,8 +110,7 @@ Georgetown Shuttle,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Harney St. & Airport Way,"<h2>Title</h2>
-<p>Harney St. and Airport Way</p>
+Harney St. and Airport Way,"<h1>Harney St. & Airport Way</h1>
 <h2>Goal</h2>
 <p>New pedestrian activated signal at Harney and Airport</p>
 <br><br>
@@ -132,8 +119,7 @@ Harney St. & Airport Way,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Homer & Airport,"<h2>Title</h2>
-<p>Homer and Airport</p>
+Homer and Airport,"<h1>Homer & Airport</h1>
 <h2>Goal</h2>
 <p>New pedestrian activated signal at Homer and Airport</p>
 <br><br>
@@ -142,8 +128,7 @@ Homer & Airport,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Homer Street,"<h2>Title</h2>
-<p>Homer Street</p>
+Homer Street,"<h1>Homer Street</h1>
 <h2>Goal</h2>
 <p>Convert Homer into a shared pedestrian and vehicle street ('woonerf')</p>
 <br><br>
@@ -152,8 +137,7 @@ Homer Street,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Lucile & Holgate,"<h2>Title</h2>
-<p>Lucile and Holgate</p>
+Lucile and Holgate,"<h1>Lucile & Holgate</h1>
 <h2>Goal</h2>
 <p>I-5 Bike/Ped pathway between Lucile and Holgate</p>
 <br><br>
@@ -162,8 +146,7 @@ Lucile & Holgate,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Marinas,"<h2>Title</h2>
-<p>Marinas</p>
+Marinas,"<h1>Marinas</h1>
 <h2>Goal</h2>
 <p>More marinas along the Duwamish</p>
 <br><br>
@@ -172,8 +155,7 @@ Marinas,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Metro transit improvements in Georgetown,"<h2>Title</h2>
-<p>Metro transit improvements in Georgetown</p>
+Metro transit improvements in Georgetown,"<h1>Metro transit improvements in Georgetown</h1>
 <h2>Goal</h2>
 <p>Metro transit improvements in Georgetown</p>
 <br><br>
@@ -182,8 +164,7 @@ Metro transit improvements in Georgetown,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Nebraska and Airport Way,"<h2>Title</h2>
-<p>Nebraska and Airport Way</p>
+Nebraska and Airport Way,"<h1>Nebraska and Airport Way</h1>
 <h2>Goal</h2>
 <p>New traffic signal at Nebraska and Airport Way</p>
 <br><br>
@@ -192,8 +173,7 @@ Nebraska and Airport Way,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Orcas Traffic Control,"<h2>Title</h2>
-<p>Orcas Traffic Control</p>
+Orcas Traffic Control,"<h1>Orcas Traffic Control</h1>
 <h2>Goal</h2>
 <p>Traffic control improvements along Orcas between 1st and 4th </p>
 <br><br>
@@ -202,8 +182,7 @@ Orcas Traffic Control,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Pedestrian Bridge,"<h2>Title</h2>
-<p>Pedestrian Bridge</p>
+Pedestrian Bridge,"<h1>Pedestrian Bridge</h1>
 <h2>Goal</h2>
 <p>Pedestrian bridge across the river linking to South Park</p>
 <br><br>
@@ -212,8 +191,7 @@ Pedestrian Bridge,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Perimeter Road S.,"<h2>Title</h2>
-<p>Perimeter Road S.</p>
+Perimeter Road S.,"<h1>Perimeter Road S.</h1>
 <h2>Goal</h2>
 <p>Widen and improve access points to Perimeter Road S.</p>
 <br><br>
@@ -222,8 +200,7 @@ Perimeter Road S.,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Railroad spur crossing on Corson Ave.,"<h2>Title</h2>
-<p>Railroad spur crossing on Corson Ave.</p>
+Railroad spur crossing on Corson Ave.,"<h1>Railroad spur crossing on Corson Ave.</h1>
 <h2>Goal</h2>
 <p>Safety gates at the railroad spur crossing on Corson</p>
 <h2>Next Steps</h2>
@@ -234,8 +211,7 @@ Railroad spur crossing on Corson Ave.,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-River St. & E. Marginal Way,"<h2>Title</h2>
-<p>River St. and E. Marginal Way</p>
+River St. and E. Marginal Way,"<h1>River St. & E. Marginal Way</h1>
 <h2>Goal</h2>
 <p>New pedestrian activated signal at River and Marginal</p>
 <br><br>
@@ -244,8 +220,7 @@ River St. & E. Marginal Way,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-South Lucile,"<h2>Title</h2>
-<p>South Lucile</p>
+South Lucile,"<h1>South Lucile</h1>
 <h2>Goal</h2>
 <p>Evaluate spur railroad south of Lucile as a non-motorized corridor</p>
 <h2>Progress Detail</h2>
@@ -260,8 +235,7 @@ South Lucile,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Vale St. & Corson Ave.,"<h2>Title</h2>
-<p>Vale St. and Corson Ave.</p>
+Vale St. and Corson Ave.,"<h1>Vale St. & Corson Ave.</h1>
 <h2>Goal</h2>
 <p>New pedestrian activated signal at Vale and Corson</p>
 <br><br>
@@ -270,8 +244,7 @@ Vale St. & Corson Ave.,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Water Taxis,"<h2>Title</h2>
-<p>Water Taxis</p>
+Water Taxis,"<h1>Water Taxis</h1>
 <h2>Goal</h2>
 <p>Water taxis as public transportation along the river</p>
 <br><br>

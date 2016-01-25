@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-Airport & 13th,"<h2>Title</h2>
-<p>Airport 13th intersection</p>
+Airport 13th intersection,"<h1>Airport & 13th</h1>
 <h2>Goal</h2>
 <p>Narrow the intersection at Airport and 13th</p>
 <br><br>
@@ -9,8 +8,7 @@ Airport & 13th,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Airport & 13th,"<h2>Title</h2>
-<p>airport 13th stop</p>
+airport 13th stop,"<h1>Airport & 13th</h1>
 <h2>Goal</h2>
 <p>Improved stop facility at Airport and 13th </p>
 <h2>Progress Detail</h2>
@@ -21,8 +19,7 @@ Airport & 13th,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Lucile St. Bridge,"<h2>Title</h2>
-<p>Lucile St. Bridge</p>
+Lucile St. Bridge,"<h1>Lucile St. Bridge</h1>
 <h2>Goal</h2>
 <p>Rehabilitate the Lucile St bridge</p>
 <h2>Progress Detail</h2>
@@ -33,8 +30,7 @@ Lucile St. Bridge,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Road Diet,"<h2>Title</h2>
-<p>Road Diet</p>
+Road Diet,"<h1>Road Diet</h1>
 <h2>Goal</h2>
 <p>Road diet (rechannelize from 4 lanes to 3 lanes) and add bike lanes on Ellis and Albro</p>
 <br><br>
@@ -43,8 +39,7 @@ Road Diet,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Transportation</p>
 ",0,0
-Signalization of 4th and Fidalgo,"<h2>Title</h2>
-<p>Signalization of 4th and Fidalgo</p>
+Signalization of 4th and Fidalgo,"<h1>Signalization of 4th and Fidalgo</h1>
 <h2>Goal</h2>
 <p>Signalization of 4th and Fidalgo</p>
 <br><br>

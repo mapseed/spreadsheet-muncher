@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-Airport way & 13th ave,"<h2>Title</h2>
-<p>airport 13th parks</p>
+airport 13th parks,"<h1>Airport way & 13th ave</h1>
 <h2>Goal</h2>
 <p>Add pocket parks at Airport and 13th intersection</p>
 <br><br>
@@ -9,8 +8,7 @@ Airport way & 13th ave,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Parks and Open Space</p>
 ",0,0
-Children's Playground,"<h2>Title</h2>
-<p>Children's Playground</p>
+Children's Playground,"<h1>Children's Playground</h1>
 <h2>Goal</h2>
 <p>Install a childrens playground</p>
 <br><br>
@@ -19,8 +17,7 @@ Children's Playground,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Parks and Open Space</p>
 ",0,0
-Doris St. & Airport Way,"<h2>Title</h2>
-<p>Doris St. and Airport Way</p>
+Doris St. and Airport Way,"<h1>Doris St. & Airport Way</h1>
 <h2>Goal</h2>
 <p>Add a pocket park or plaza at the corner of Doris and Airport</p>
 <h2>Progress Detail</h2>
@@ -31,8 +28,7 @@ Doris St. & Airport Way,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Parks and Open Space</p>
 ",0,0
-Oxbow P-Patch,"<h2>Title</h2>
-<p>Oxbow P-Patch</p>
+Oxbow P-Patch,"<h1>Oxbow P-Patch</h1>
 <h2>Goal</h2>
 <p>Develop P-Patch</p>
 <h2>Progress Detail</h2>
@@ -45,8 +41,7 @@ Oxbow P-Patch,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Parks and Open Space</p>
 ",0,0
-Oxbow Park Acquisition,"<h2>Title</h2>
-<p>Oxbow Park Acquisition</p>
+Oxbow Park Acquisition,"<h1>Oxbow Park Acquisition</h1>
 <h2>Goal</h2>
 <p>Acquire Oxbow Park from WSDOT</p>
 <h2>Progress Detail</h2>
@@ -59,8 +54,7 @@ Oxbow Park Acquisition,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Parks and Open Space</p>
 ",0,0
-Slip 4 land acquisition,"<h2>Title</h2>
-<p>Slip 4 land acquisition</p>
+Slip 4 land acquisition,"<h1>Slip 4 land acquisition</h1>
 <h2>Goal</h2>
 <p>Acquire land around Slip 4 for park / public use</p>
 <br><br>

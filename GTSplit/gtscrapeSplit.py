@@ -35,12 +35,12 @@ def splitting(targetCategory, short):
 		#Iterate through rows of input file, and write a line to the output file for each one
 		for row in reader:
 			#Get the title string
-			title = row['Title']
+			title = row['Slug']
 
 			#Only look at rows with nonempty Title field
 			if title != "" and row['Category']==targetCategory:
 				#Create the description string from the desired columns of input file
-				description = "<h1>%s</h1>\n<p>%s</p>\n" % ("Title", row['Slug'])
+				description = "<h1>%s</h1>\n" % (row['Title'])
 				for header in descriptionHeaders:
 					if row[header] != "":
 						description += "<h2>%s</h2>\n<p>%s</p>\n" % (header, row[header])

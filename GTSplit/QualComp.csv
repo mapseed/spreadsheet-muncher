@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-Carleton Grocery,"<h2>Title</h2>
-<p>Carleton Grocery</p>
+Carleton Grocery,"<h1>Carleton Grocery</h1>
 <h2>Goal</h2>
 <p>Attract a grocery store</p>
 <h2>Progress Detail</h2>
@@ -11,8 +10,7 @@ Carleton Grocery,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-Encourage more restaurants,"<h2>Title</h2>
-<p>Encourage more restaurants</p>
+Encourage more restaurants,"<h1>Encourage more restaurants</h1>
 <h2>Goal</h2>
 <p>Encourage more restaurants</p>
 <br><br>
@@ -21,8 +19,7 @@ Encourage more restaurants,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Quality of Life</p>
 ",0,0
-Establish a business association,"<h2>Title</h2>
-<p>Establish a business association</p>
+Establish a business association,"<h1>Establish a business association</h1>
 <h2>Goal</h2>
 <p>Establish a business association</p>
 <br><br>

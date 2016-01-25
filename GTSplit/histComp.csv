@@ -1,6 +1,5 @@
 Title,Description,Lat,Long
-Main Street,"<h2>Title</h2>
-<p>Main Street</p>
+Main Street,"<h1>Main Street</h1>
 <h2>Goal</h2>
 <p>""Main Street"" revitalization / attract investment</p>
 <h2>Progress Detail</h2>
@@ -13,8 +12,7 @@ Main Street,"<h2>Title</h2>
 <h5>Category:</h5>
 <p>Historic Preservation</p>
 ",0,0
-Oxbow Park,"<h2>Title</h2>
-<p>Oxbow Park</p>
+Oxbow Park,"<h1>Oxbow Park</h1>
 <h2>Goal</h2>
 <p>Hat and Boots preservation</p>
 <h2>Progress Detail</h2>
