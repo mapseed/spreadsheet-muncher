@@ -1,3 +1,4 @@
+from __future__ import print_function
 #For reading and writing .csv files
 import csv
 #If you want to change the geocoder from "GeocodeFarm" to something else,
@@ -62,8 +63,8 @@ def splitting(targetCategory, short):
 				description += "</p>\n<h5>Category:</h5>\n<p>" + row['Category'] + "</p>\n"
 
 				#Print for testing:
-				print title
-				print description
+				print(title)
+				print(description)
 
 				#while geocoding is commented out, these serve as a lat and lon placeholders
 				lat=0
@@ -77,7 +78,7 @@ def splitting(targetCategory, short):
 				(lat, lon) = (location.latitude, location.longitude) if location else (0, 0) #(47.55,-122.33)
 
 				#Print for testing:
-				print row['Location'] + ": (%f, %f)\n" %(lat, lon)
+				print(row['Location'] + ": (%f, %f)\n" %(lat, lon))
 				"""
 
 				#Using a dictionary writer ensures that the row contents are matched to the correct columns, even if headers are rearranged
