@@ -139,23 +139,17 @@ def splitting(targetCategory, short):
                 # matched to the correct columns, even if headers are
                 # rearranged
                 # Sorting the data for values in 'Progress' column
-                if row['Progress'] == 'Complete':
-                    writerComp.writerow(
-                        {'Title': title, 'Description': description,
-                         'Lat': lat, 'Long': lon})
-                elif row['Progress'] == 'In Progress':
-                    writerProg.writerow(
-                        {'Title': title, 'Description': description,
-                         'Lat': lat, 'Long': lon})
-                elif row['Progress'] == 'No Progress':
-                    writerNoProg.writerow(
-                        {'Title': title, 'Description': description,
-                         'Lat': lat, 'Long': lon})
-                elif row['Progress'] == 'Dead' or\
-                     row['Progress'] == 'No Progress':
-                    writerDead.writerow(
-                        {'Title': title, 'Description': description,
-                         'Lat': lat, 'Long': lon})
+                newRow = {'Title': title, 'Description': description,
+                          'Lat': lat, 'Long': lon}
+
+                # Write our new row to the appropriate CSV,
+                # depending on the value of the row's 'Progress'
+                {
+                    'Complete': lambda x: writerComp.writerow(x),
+                    'In Progress': lambda x: writerProg.writerow(x),
+                    'No Progress': lambda x: writerNoProg.writerow(x),
+                    'Dead': lambda x: writerDead.writerow(x)
+                }[row['Progress']](newRow)
 
 # For each category, we need to change these parameters with the target
 # category and a shortened name for the csv file title
