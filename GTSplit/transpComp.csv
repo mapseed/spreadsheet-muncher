@@ -1,13 +1,17 @@
 Title,Description,Lat,Long
-Airport & 13th,"<h2>Goal</h2>
+Airport & 13th,"<h2>Title</h2>
+<p>Airport 13th intersection</p>
+<h2>Goal</h2>
 <p>Narrow the intersection at Airport and 13th</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Airport Way Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Airport & 13th,"<h2>Goal</h2>
+",0,0
+Airport & 13th,"<h2>Title</h2>
+<p>airport 13th stop</p>
+<h2>Goal</h2>
 <p>Improved stop facility at Airport and 13th </p>
 <h2>Progress Detail</h2>
 <p>Installed signal 2006 as part of I-5 rebuild mitigation</p>
@@ -16,8 +20,10 @@ Airport & 13th,"<h2>Goal</h2>
 <p>1977 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5485677903562,-122.315942004024
-Lucile St. Bridge,"<h2>Goal</h2>
+",0,0
+Lucile St. Bridge,"<h2>Title</h2>
+<p>Lucile St. Bridge</p>
+<h2>Goal</h2>
 <p>Rehabilitate the Lucile St bridge</p>
 <h2>Progress Detail</h2>
 <p>Reconstructed @1979</p>
@@ -26,4 +32,24 @@ Lucile St. Bridge,"<h2>Goal</h2>
 <p>1977 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
+",0,0
+Road Diet,"<h2>Title</h2>
+<p>Road Diet</p>
+<h2>Goal</h2>
+<p>Road diet (rechannelize from 4 lanes to 3 lanes) and add bike lanes on Ellis and Albro</p>
+<br><br>
+<h4>Study:</h4>
+<p>2007 Bicycle Master Plan</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0
+Signalization of 4th and Fidalgo,"<h2>Title</h2>
+<p>Signalization of 4th and Fidalgo</p>
+<h2>Goal</h2>
+<p>Signalization of 4th and Fidalgo</p>
+<br><br>
+<h4>Study:</h4>
+<p>1998 Neighborhood Plan</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0

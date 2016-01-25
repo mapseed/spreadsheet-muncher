@@ -1,77 +1,98 @@
 Title,Description,Lat,Long
-6th Ave Improvements,"<h2>Goal</h2>
+Title,Description,Lat,Long
+6th Ave Improvements,"<h2>Title</h2>
+<p>6th ave</p>
+<h2>Goal</h2>
 <p>Parking and pedestrian improvements along 6th Ave S.</p>
 <br><br>
 <h4>Study:</h4>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5732177943948,-122.325982004188
-Bike Sharrows,"<h2>Goal</h2>
+",0,0
+Bike Sharrows,"<h2>Title</h2>
+<p>Bike Sharrows</p>
+<h2>Goal</h2>
 <p>Bike sharrows on 1st Ave S from Marginal to Dawson</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Bicycle Master Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Bike Sharrows,"<h2>Goal</h2>
+",0,0
+Bike Sharrows,"<h2>Title</h2>
+<p>Bike Sharrows</p>
+<h2>Goal</h2>
 <p>Bike sharrows on 6th Ave S from River to Lucile</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Bicycle Master Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Bike Sharrows,"<h2>Goal</h2>
+",0,0
+Bike Sharrows,"<h2>Title</h2>
+<p>Bike Sharrows</p>
+<h2>Goal</h2>
 <p>Bike sharrows on Harney</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Bicycle Master Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5484377903351,-122.318792004071
-Bike Sharrows,"<h2>Goal</h2>
+",0,0
+Bike Sharrows,"<h2>Title</h2>
+<p>Bike Sharrows</p>
+<h2>Goal</h2>
 <p>Bike sharrows on Vale</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Bicycle Master Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.549157790454,-122.317312004046
-Carlton Ave,"<h2>Goal</h2>
+",0,0
+Carlton Ave,"<h2>Title</h2>
+<p>Carlton Ave</p>
+<h2>Goal</h2>
 <p>Bike boulevard on Carleton Ave</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Bicycle Master Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6323078040766,-122.39870200538
-Carstens and Airport Way,"<h2>Goal</h2>
+",0,0
+Carstens and Airport Way,"<h2>Title</h2>
+<p>Carstens and Airport Way</p>
+<h2>Goal</h2>
 <p>New traffic signal at Carstens and Airport Way</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Airport Way Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Corson St. & 6th Ave S.,"<h2>Goal</h2>
+",0,0
+Corson St. & 6th Ave S.,"<h2>Title</h2>
+<p>Corson St. and 6th Ave S.</p>
+<h2>Goal</h2>
 <p>Bike/Ped pathway between Corson and 6th Ave S (between DOT and SSCC)</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Bicycle Master Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5732177943948,-122.325982004188
-Doris and Airport Way,"<h2>Goal</h2>
+",0,0
+Doris and Airport Way,"<h2>Title</h2>
+<p>Doris and Airport Way</p>
+<h2>Goal</h2>
 <p>New traffic signal at Doris and Airport Way</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Airport Way Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Freeway Exit,"<h2>Goal</h2>
+",0,0
+Freeway Exit,"<h2>Title</h2>
+<p>Freeway Exit</p>
+<h2>Goal</h2>
 <p>Close the freeway exit at Corson and the entrance at Bailey - relocate to Lucile and Albro</p>
 <h2>Status</h2>
 <p>**multiple</p>
@@ -80,100 +101,182 @@ Freeway Exit,"<h2>Goal</h2>
 <p>1977 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5469977901003,-122.314892004007
-Freeway Signage,"<h2>Goal</h2>
+",0,0
+Freeway Signage,"<h2>Title</h2>
+<p>Freeway Signage</p>
+<h2>Goal</h2>
 <p>Add freeway signage that identifies ""Georgetown"" in the Corson/Michigan exit</p>
 <br><br>
 <h4>Study:</h4>
 <p>1977 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5523877909831,-122.319920040898
-Georgetown Shuttle,"<h2>Goal</h2>
+",0,0
+Georgetown Shuttle,"<h2>Title</h2>
+<p>Georgetown Shuttle</p>
+<h2>Goal</h2>
 <p>Georgetown shuttle to connect key points with King County Airport</p>
 <br><br>
 <h4>Study:</h4>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Harney St. & Airport Way,"<h2>Goal</h2>
+",0,0
+Harney St. & Airport Way,"<h2>Title</h2>
+<p>Harney St. and Airport Way</p>
+<h2>Goal</h2>
 <p>New pedestrian activated signal at Harney and Airport</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Bicycle Master Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5480677902742,-122.314682004003
-Homer & Airport,"<h2>Goal</h2>
+",0,0
+Homer & Airport,"<h2>Title</h2>
+<p>Homer and Airport</p>
+<h2>Goal</h2>
 <p>New pedestrian activated signal at Homer and Airport</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Airport Way Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5507577907162,-122.318422004065
-Homer Street,"<h2>Goal</h2>
+",0,0
+Homer Street,"<h2>Title</h2>
+<p>Homer Street</p>
+<h2>Goal</h2>
 <p>Convert Homer into a shared pedestrian and vehicle street ('woonerf')</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Airport Way Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5517790778777,-122.322322004128
-Lucile & Holgate,"<h2>Goal</h2>
+",0,0
+Lucile & Holgate,"<h2>Title</h2>
+<p>Lucile and Holgate</p>
+<h2>Goal</h2>
 <p>I-5 Bike/Ped pathway between Lucile and Holgate</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Bicycle Master Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Marinas,"<h2>Goal</h2>
+",0,0
+Marinas,"<h2>Title</h2>
+<p>Marinas</p>
+<h2>Goal</h2>
 <p>More marinas along the Duwamish</p>
 <br><br>
 <h4>Study:</h4>
 <p>2008 Duwamish Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Metro transit improvements in Georgetown,"<h2>Goal</h2>
+",0,0
+Metro transit improvements in Georgetown,"<h2>Title</h2>
+<p>Metro transit improvements in Georgetown</p>
+<h2>Goal</h2>
 <p>Metro transit improvements in Georgetown</p>
 <br><br>
 <h4>Study:</h4>
 <p>1977 Neighborhood Plan, 1998 Neighborhood Plan, 2008 Duwamish Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Nebraska and Airport Way,"<h2>Goal</h2>
+",0,0
+Nebraska and Airport Way,"<h2>Title</h2>
+<p>Nebraska and Airport Way</p>
+<h2>Goal</h2>
 <p>New traffic signal at Nebraska and Airport Way</p>
 <br><br>
 <h4>Study:</h4>
 <p>2007 Airport Way Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Orcas Traffic Control,"<h2>Goal</h2>
+",0,0
+Orcas Traffic Control,"<h2>Title</h2>
+<p>Orcas Traffic Control</p>
+<h2>Goal</h2>
 <p>Traffic control improvements along Orcas between 1st and 4th </p>
 <br><br>
 <h4>Study:</h4>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5519077909043,-122.334222004323
-Pedestrian Bridge,"<h2>Goal</h2>
+",0,0
+Pedestrian Bridge,"<h2>Title</h2>
+<p>Pedestrian Bridge</p>
+<h2>Goal</h2>
 <p>Pedestrian bridge across the river linking to South Park</p>
 <br><br>
 <h4>Study:</h4>
 <p>2008 Duwamish Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Perimeter Road S.,"<h2>Goal</h2>
+",0,0
+Perimeter Road S.,"<h2>Title</h2>
+<p>Perimeter Road S.</p>
+<h2>Goal</h2>
 <p>Widen and improve access points to Perimeter Road S.</p>
 <br><br>
 <h4>Study:</h4>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5361778832789,-122.301512003788
+",0,0
+Railroad spur crossing on Corson Ave.,"<h2>Title</h2>
+<p>Railroad spur crossing on Corson Ave.</p>
+<h2>Goal</h2>
+<p>Safety gates at the railroad spur crossing on Corson</p>
+<h2>Next Steps</h2>
+<p>Reach out to Union Pacific</p>
+<br><br>
+<h4>Study:</h4>
+<p>1998 Neighborhood Plan, 2007 Airport Way Visioning</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0
+River St. & E. Marginal Way,"<h2>Title</h2>
+<p>River St. and E. Marginal Way</p>
+<h2>Goal</h2>
+<p>New pedestrian activated signal at River and Marginal</p>
+<br><br>
+<h4>Study:</h4>
+<p>2007 Bicycle Master Plan</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0
+South Lucile,"<h2>Title</h2>
+<p>South Lucile</p>
+<h2>Goal</h2>
+<p>Evaluate spur railroad south of Lucile as a non-motorized corridor</p>
+<h2>Progress Detail</h2>
+<p>Stalled</p>
+<h2>Challenges and barriers</h2>
+<p>Funding and negotiating with the railroad</p>
+<h2>Next Steps</h2>
+<p>Contact SDOT to push the project forward; identify funding opportunities</p>
+<br><br>
+<h4>Study:</h4>
+<p>1977 Neighborhood Plan, 1998 Neighborhood Plan, 2007 Bicycle Master Plan, 2007 Airport Way Visioning</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0
+Vale St. & Corson Ave.,"<h2>Title</h2>
+<p>Vale St. and Corson Ave.</p>
+<h2>Goal</h2>
+<p>New pedestrian activated signal at Vale and Corson</p>
+<br><br>
+<h4>Study:</h4>
+<p>2007 Bicycle Master Plan</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0
+Water Taxis,"<h2>Title</h2>
+<p>Water Taxis</p>
+<h2>Goal</h2>
+<p>Water taxis as public transportation along the river</p>
+<br><br>
+<h4>Study:</h4>
+<p>2008 Duwamish Visioning</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0

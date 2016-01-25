@@ -1,5 +1,7 @@
 Title,Description,Lat,Long
-Anti-graffiti campaign,"<h2>Goal</h2>
+Anti-graffiti campaign,"<h2>Title</h2>
+<p>Anti-graffiti campaign</p>
+<h2>Goal</h2>
 <p>Anti-graffiti campaign</p>
 <h2>Progress Detail</h2>
 <p>DROF grant issed for this</p>
@@ -10,8 +12,10 @@ Anti-graffiti campaign,"<h2>Goal</h2>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6062077998013,-122.332072004288
-Community Festivals,"<h2>Goal</h2>
+",0,0
+Community Festivals,"<h2>Title</h2>
+<p>Community Festivals</p>
+<h2>Goal</h2>
 <p>Community Festivals</p>
 <h2>Progress Detail</h2>
 <p>Carnival, History Tour, Garden Walk, Neighborhood BBQ</p>
@@ -20,8 +24,10 @@ Community Festivals,"<h2>Goal</h2>
 <p>1995 Needs Assessment, 1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6062077998013,-122.332072004288
-"Encourage clean industry, better ecology standards for business","<h2>Goal</h2>
+",0,0
+"Encourage clean industry, better ecology standards for business","<h2>Title</h2>
+<p>Encourage clean industry, better ecology standards for business</p>
+<h2>Goal</h2>
 <p>Encourage clean industry, better ecology standards for business</p>
 <h2>Progress Detail</h2>
 <p>Much encouragement is being put forth re: CDL, Waste Management</p>
@@ -34,8 +40,10 @@ Community Festivals,"<h2>Goal</h2>
 <p>1998 Neighborhood Plan, 2008 Duwamish Visioning</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6062077998013,-122.332072004288
-Neighborhood Clean-ups,"<h2>Goal</h2>
+",0,0
+Neighborhood Clean-ups,"<h2>Title</h2>
+<p>Neighborhood Clean-ups</p>
+<h2>Goal</h2>
 <p>Neighborhood Clean-ups</p>
 <h2>Progress Detail</h2>
 <p>Spring cleanups annually</p>
@@ -48,8 +56,10 @@ Neighborhood Clean-ups,"<h2>Goal</h2>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6062077998013,-122.332072004288
-Old City Hall,"<h2>Goal</h2>
+",0,0
+Old City Hall,"<h2>Title</h2>
+<p>Old City Hall</p>
+<h2>Goal</h2>
 <p>Mini-City Hall in Old City Hall with bulletin board, meeting rooms. </p>
 <h2>Progress Detail</h2>
 <p>Georgetown City Hall restoration completed and GCC given permanent use of one room and shared use of a large meeting room.  However, public access is not 24/7</p>
@@ -60,8 +70,10 @@ Old City Hall,"<h2>Goal</h2>
 <p>1977 Neighborhood Plan, 1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6062077998013,-122.332072004288
-Public art by local artists,"<h2>Goal</h2>
+",0,0
+Public art by local artists,"<h2>Title</h2>
+<p>Public art by local artists</p>
+<h2>Goal</h2>
 <p>Public art by local artists</p>
 <h2>Progress Detail</h2>
 <p>8th Ave street end kiosk; Garden Hat installation at Oxbow; Graffitti wall facing 4th Ave. Festival St. art. </p>
@@ -74,8 +86,10 @@ Public art by local artists,"<h2>Goal</h2>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6062077998013,-122.332072004288
-South Seattle College,"<h2>Goal</h2>
+",0,0
+South Seattle College,"<h2>Title</h2>
+<p>South Seattle College</p>
+<h2>Goal</h2>
 <p>Establish a community center with computer lab and job center</p>
 <h2>Progress Detail</h2>
 <p>Job center located at SSCC Georgetown Annex</p>
@@ -86,8 +100,10 @@ South Seattle College,"<h2>Goal</h2>
 <p>1995 Needs Assessment, 1998 Neighborhood Plan, 2008 Duwamish Visioning</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6101378004441,-122.318062004059
-Steam Plant,"<h2>Goal</h2>
+",0,0
+Steam Plant,"<h2>Title</h2>
+<p>Steam Plant</p>
+<h2>Goal</h2>
 <p>City support and endorsement of the Steam Plant Museum</p>
 <h2>Progress Detail</h2>
 <p>Seattle City Light is working on moving this forward</p>
@@ -100,8 +116,10 @@ Steam Plant,"<h2>Goal</h2>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6062077998013,-122.332072004288
-Tree plantings,"<h2>Goal</h2>
+",0,0
+Tree plantings,"<h2>Title</h2>
+<p>Tree plantings</p>
+<h2>Goal</h2>
 <p>Tree plantings</p>
 <h2>Progress Detail</h2>
 <p>Trees planted on Corson, Flora, Ellis, 8th Ave. Progress has been made. As of 2015, City has recommitted to neighborhood tree planting.</p>
@@ -114,4 +132,4 @@ Tree plantings,"<h2>Goal</h2>
 <p>1977 Neighborhood Plan, 1998 Neighborhood Plan, 2008 Duwamish Visioning</p>
 <h5>Category:</h5>
 <p>Quality of Life</p>
-",47.6062077998013,-122.332072004288
+",0,0

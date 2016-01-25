@@ -1,5 +1,7 @@
 Title,Description,Lat,Long
-8th Ave South,"<h2>Goal</h2>
+8th Ave South,"<h2>Title</h2>
+<p>8th ave</p>
+<h2>Goal</h2>
 <p>Maintain sidewalk on 8th Ave S to allow peds to walk safely to the park</p>
 <h2>Progress Detail</h2>
 <p>Project has stalled.</p>
@@ -12,8 +14,10 @@ Title,Description,Lat,Long
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5732877944072,-122.322520041333
-Airport Way,"<h2>Goal</h2>
+",0,0
+Airport Way,"<h2>Title</h2>
+<p>airport 13th crossswalks</p>
+<h2>Goal</h2>
 <p>Crosswalks on Airport Way</p>
 <h2>Progress Detail</h2>
 <p>Cross walk added at the new traffic light (Stanley and Airport)</p>
@@ -26,8 +30,10 @@ Airport Way,"<h2>Goal</h2>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.5480677902742,-122.314682004003
-Airport Way stop lights,"<h2>Goal</h2>
+",0,0
+Airport Way stop lights,"<h2>Title</h2>
+<p>airport stop lights</p>
+<h2>Goal</h2>
 <p>Add stop lights along Airport Way and make more pedestrian friendly</p>
 <h2>Progress Detail</h2>
 <p>Sidewalk in front of Fran's has been rebuilt</p>
@@ -36,8 +42,10 @@ Airport Way stop lights,"<h2>Goal</h2>
 <p>1977 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Bike & Pedestrian connections,"<h2>Goal</h2>
+",0,0
+Bike & Pedestrian connections,"<h2>Title</h2>
+<p>Bike and Pedestrian connections</p>
+<h2>Goal</h2>
 <p>Ped and bike connections with South Park and Beacon Hill. Connect GT with the urban trail system. </p>
 <h2>Status</h2>
 <p>**multiple</p>
@@ -52,8 +60,10 @@ Bike & Pedestrian connections,"<h2>Goal</h2>
 <p>1995 Needs Assessment, 1998 Neighborhood Plan, 2008 Duwamish Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Georgetown Steam Plant,"<h2>Goal</h2>
+",0,0
+Georgetown Steam Plant,"<h2>Title</h2>
+<p>Georgetown Steam Plant</p>
+<h2>Goal</h2>
 <p>Pedestrian and bicycle connections to the GT Steam Plant</p>
 <h2>Progress Detail</h2>
 <p>Seattle City Light is working with KCIA on this</p>
@@ -62,8 +72,10 @@ Georgetown Steam Plant,"<h2>Goal</h2>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
-Nebraska Street.,"<h2>Goal</h2>
+",0,0
+Nebraska Street.,"<h2>Title</h2>
+<p>Nebraska Street.</p>
+<h2>Goal</h2>
 <p>Sidewalk, paving, curb, gutter, and drainage along Nebraska</p>
 <h2>Progress Detail</h2>
 <p>Nebraska has been paved</p>
@@ -72,4 +84,48 @@ Nebraska Street.,"<h2>Goal</h2>
 <p>2007 Airport Way Visioning</p>
 <h5>Category:</h5>
 <p>Transportation</p>
-",47.6062077998013,-122.332072004288
+",0,0
+Planting Strip – Corson & Ellis,"<h2>Title</h2>
+<p>Planting Strip – Corson and Ellis</p>
+<h2>Goal</h2>
+<p>Widen the planting strip on Corson and Ellis</p>
+<h2>Status</h2>
+<p>**multiple</p>
+<h2>Progress Detail</h2>
+<p>Some depaving is happening on Corson</p>
+<br><br>
+<h4>Study:</h4>
+<p>1977 Neighborhood Plan</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0
+Traffic Calming,"<h2>Title</h2>
+<p>Traffic Calming</p>
+<h2>Goal</h2>
+<p>Use traffic calming to protect residential streets</p>
+<h2>Progress Detail</h2>
+<p>Traffic circles installed throughout the neighborhoos with Neighborhood Street Fund grants</p>
+<h2>Challenges and barriers</h2>
+<p>Corgiat Mitigation not fully implemented on Corson</p>
+<h2>Next Steps</h2>
+<p>Neckdowns at Corson and Marginal; Ellis and Marginal; 12th and Vale</p>
+<br><br>
+<h4>Study:</h4>
+<p>1977 Neighborhood Plan, 1995 Needs Assessment, 1998 Neighborhood Plan</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0
+Train station stop,"<h2>Title</h2>
+<p>Train station stop</p>
+<h2>Goal</h2>
+<p>Train station stop</p>
+<h2>Progress Detail</h2>
+<p>A Link stop at Boeing Access Road is included in initial study of Sound Transit 3 funding</p>
+<h2>Challenges and barriers</h2>
+<p>One of many things being considered</p>
+<br><br>
+<h4>Study:</h4>
+<p>1995 Needs Assessment, 1998 Neighborhood Plan, 2008 Duwamish Visioning</p>
+<h5>Category:</h5>
+<p>Transportation</p>
+",0,0

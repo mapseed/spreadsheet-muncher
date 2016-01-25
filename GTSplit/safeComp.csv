@@ -1,5 +1,7 @@
 Title,Description,Lat,Long
-Create a West Seattle Precinct,"<h2>Goal</h2>
+Create a West Seattle Precinct,"<h2>Title</h2>
+<p>Create a West Seattle Precinct</p>
+<h2>Goal</h2>
 <p>Create a West Seattle Precinct</p>
 <h2>Progress Detail</h2>
 <p>Southwest precinct created - Georgetown now in South Precinct</p>
@@ -8,4 +10,4 @@ Create a West Seattle Precinct,"<h2>Goal</h2>
 <p>1998 Neighborhood Plan</p>
 <h5>Category:</h5>
 <p>Safety</p>
-",47.6062077998013,-122.332072004288
+",0,0

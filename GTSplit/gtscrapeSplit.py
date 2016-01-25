@@ -40,7 +40,7 @@ def splitting(targetCategory, short):
 			#Only look at rows with nonempty Title field
 			if title != "" and row['Category']==targetCategory:
 				#Create the description string from the desired columns of input file
-				description = ""
+				description = "<h2>%s</h2>\n<p>%s</p>\n" % ("Title", row['Slug'])
 				for header in descriptionHeaders:
 					if row[header] != "":
 						description += "<h2>%s</h2>\n<p>%s</p>\n" % (header, row[header])
@@ -92,7 +92,7 @@ def splitting(targetCategory, short):
 					writerDead.writerow({'Title':title, 'Description':description, 'Lat':lat, 'Long':lon})
 
 #For each category, we need to change these parameters with the target category and a shortened name for the csv file title
-splitting('Quality of Life', 'safe')
+splitting('Quality of Life', 'qual')
 splitting('Safety', 'safe')
 splitting('Transportation', 'transp')
 splitting('Parks and Open Space', 'parks')
