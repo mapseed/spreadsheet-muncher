@@ -1,11 +1,21 @@
 #!/usr/bin/env python
 
 from __future__ import print_function
+from time import sleep
 # For reading and writing .csv files
 import csv
 # If you want to change the geocoder from "GeocodeFarm" to something else,
-# you only need to do it here since it's imported as myCoder
-from geopy.geocoders import GeocodeFarm as myCoder
+# you only need to do it here since it's imported as farm_geocoder
+from geopy.geocoders import GeocodeFarm as farm_geocoder
+from geopy.geocoders import GoogleV3 as google_geocoder
+
+IMPORT_CSV_FILE = 'data/Georgetown_Import.ods_GT_Matrix.csv'
+
+# The bounding box of the viewport within which to bias geocode results
+# more prominently (only on GoogleV3).
+# http://bboxfinder.com/#47.506997,-122.349243,47.571198,-122.285385
+GEOCODE_BOUNDING_BOX = (47.506997, -122.349243, 47.571198, -122.285385)
+API_KEY = ''  # Only needed for lots of requests
 
 # List of headers for the output csv to be imported into MapBox
 # (these can be rearranged if desired)
@@ -27,34 +37,38 @@ STUDY_NAMES = ["1977 Neighborhood Plan", "1995 Needs Assessment",
 def splitting(targetCategory, short):
     # Open the files using 'with' to make sure they close no matter what,
     # assign the files to the variables csvinput, csvoutput
-    with open('Georgetown_Import.ods_GT_Matrix.csv', 'r') as csvinput,\
-         open(short + 'Comp.csv', 'w') as Compcsvoutput,\
-         open(short + 'Prog.csv', 'w') as Progcsvoutput,\
-         open(short + 'NoProg.csv', 'w'),\
-         open(short + 'Dead.csv', 'w') as Deadcsvoutput:
+    with open(IMPORT_CSV_FILE, 'r') as csvinput,\
+         open(short + '_complete.csv', 'w') as complete_output,\
+         open(short + '_prog.csv', 'w') as prog_output,\
+         open(short + '_no-prog-or-dead.csv', 'w') as no_prog_or_dead:
+        # TODO: Categorize rows with 'Dead' progress into their own csv's:
+        # open(short + 'Dead.csv', 'w') as Deadcsvoutput:
+
         # Create a dictionary reader to iterate through the rows of the
         # input file, accessing by names in 1st row
         reader = csv.DictReader(csvinput)
 
         # Create a dictionary writer for the output files, with MAPBOX_HEADERS
         # as the ordered list of keys
-        writerComp = csv.DictWriter(Compcsvoutput, MAPBOX_HEADERS,
+        complete_writer = csv.DictWriter(complete_output, MAPBOX_HEADERS,
                                     quoting=csv.QUOTE_MINIMAL)
-        writerProg = csv.DictWriter(Progcsvoutput, MAPBOX_HEADERS,
+        prog_writer = csv.DictWriter(prog_output, MAPBOX_HEADERS,
                                     quoting=csv.QUOTE_MINIMAL)
-        writerNoProg = csv.DictWriter(Deadcsvoutput, MAPBOX_HEADERS,
-                                      quoting=csv.QUOTE_MINIMAL)
-        writerDead = csv.DictWriter(Deadcsvoutput, MAPBOX_HEADERS,
-                                    quoting=csv.QUOTE_MINIMAL)
+        no_prog_or_dead_writer = csv.DictWriter(no_prog_or_dead,
+                                                MAPBOX_HEADERS,
+                                                quoting=csv.QUOTE_MINIMAL)
 
         # Write MAPBOX_HEADERS as the 1st row of the output files
-        writerComp.writeheader()
-        writerProg.writeheader()
-        writerNoProg.writeheader()
-        writerDead.writeheader()
+        complete_writer.writeheader()
+        prog_writer.writeheader()
+        no_prog_or_dead_writer.writeheader()
+        # writerDead.writeheader()
 
         # Create a geocoder to geocode locations in Georgetown, Seattle, WA
-        geocoder = myCoder(format_string="%s, Seattle WA")
+        # GoogleV3 uses 'bounds' kwarg on geocode instead of 'format_string'
+        # Increase timeout to 10s to avoid GeocoderTimedOut exception
+        geocoder = google_geocoder(api_key=API_KEY, timeout=10)
+        # geocoder = farm_geocoder(format_string="%s, Seattle WA", timeout=10)
 
         # Iterate through rows of input file, and write a line to the output
         # file for each one
@@ -87,11 +101,12 @@ def splitting(targetCategory, short):
                 # If the last two characters of the description are ", "
                 # then remove them.
                 if description[-2:] == ", ":
-                    description  = description[:-2]
+                    description = description[:-2]
 
                 # Close the <p> tag for the studies, and add the contents of
                 # the 'Category' column to the description
-                description += "</p>\n<h5>Category:</h5>\n<p>" + row['Category'] + "</p>\n"
+                description += "</p>\n<h5>Category:</h5>\n<p>" + \
+                               row['Category'] + "</p>\n"
 
                 # Print for testing:
                 print(title)
@@ -99,43 +114,41 @@ def splitting(targetCategory, short):
 
                 # while geocoding is commented out, these serve as a
                 # lat and lon placeholders
-                lat = 0
-                lon = 0
+                lat = row['Lat']
+                lon = row['Long']
 
-                """
-                # Geocode the location from the 'Location' column -- increase
-                timeout to 10s to avoid GeocoderTimedOut exception
-                location = geocoder.geocode(row['Location'], timeout=10)
-                # Get the latitude and longitude if a valid location was found
-                # (i.e. location != None),
-                # and otherwise set the values to 0.
-                (lat, lon) = (location.latitude, location.longitude) \
-                if location else (0, 0) #(47.55,-122.33)
+                if lat == '' or lon == '':
+                    # Geocode the location from the 'Location' column
+                    # GoogleV3 uses GEOCODE_BOUNDING_BOX
+                    location = geocoder.geocode(row['Location'],
+                                                bounds=GEOCODE_BOUNDING_BOX)
+                    sleep(3)  # Limit our max requests/sec for geocoderservice
+                    # If a valid location was found, get lat/long
+                    # (i.e. location != None),
+                    # and otherwise set the values to ''.
+                    if location:
+                        (lat, lon) = (location.latitude, location.longitude)
+                    else:
+                        (lat, lon) = ('', '')
 
-                #Print for testing:
-                print(row['Location'] + ": (%f, %f)\n" %(lat, lon))
-                """
+                    # Print for testing:
+                    print(row['Location'] + ": (%f, %f)\n" % (lat, lon))
 
                 # Using a dictionary writer ensures that the row contents are
-                # matched to the correct columns, even if headers are rearranged
+                # matched to the correct columns, even if headers are
+                # rearranged
                 # Sorting the data for values in 'Progress' column
-                if row['Progress'] == 'Complete':
-                    writerComp.writerow(
-                        {'Title': title, 'Description': description,
-                         'Lat': lat, 'Long': lon})
-                elif row['Progress'] == 'In Progress':
-                    writerProg.writerow(
-                        {'Title': title, 'Description': description,
-                         'Lat': lat, 'Long': lon})
-                elif row['Progress'] == 'No Progress':
-                    writerNoProg.writerow(
-                        {'Title': title, 'Description': description,
-                         'Lat': lat, 'Long': lon})
-                elif row['Progress'] == 'Dead' or\
-                     row['Progress'] == 'No Progress':
-                    writerDead.writerow(
-                        {'Title': title, 'Description': description,
-                         'Lat': lat, 'Long': lon})
+                newRow = {'Title': title, 'Description': description,
+                          'Lat': lat, 'Long': lon}
+
+                # Write our new row to the appropriate CSV,
+                # depending on the value of the row's 'Progress'
+                {
+                    'Complete': lambda x: complete_writer.writerow(x),
+                    'In Progress': lambda x: prog_writer.writerow(x),
+                    'No Progress': lambda x: no_prog_or_dead_writer.writerow(x),
+                    'Dead': lambda x: no_prog_or_dead_writer.writerow(x)
+                }[row['Progress']](newRow)
 
 # For each category, we need to change these parameters with the target
 # category and a shortened name for the csv file title
