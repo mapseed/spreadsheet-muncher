@@ -63,6 +63,11 @@ def splitting(targetCategory, short):
 				print title
 				print description
 
+				#while geocoding is commented out, these serve as a lat and lon placeholders
+				lat=0
+				lon=0
+
+				"""
 				#Geocode the location from the 'Location' column -- increase timeout to 10s to avoid GeocoderTimedOut exception
 				location = geocoder.geocode(row['Location'], timeout=10)
 				#Get the latitude and longitude if a valid location was found (i.e. location != None), 
@@ -71,6 +76,7 @@ def splitting(targetCategory, short):
 
 				#Print for testing:
 				print row['Location'] + ": (%f, %f)\n" %(lat, lon)
+				"""
 
 				#Using a dictionary writer ensures that the row contents are matched to the correct columns, even if headers are rearranged
 				#Sorting the data for values in 'Progress' column
