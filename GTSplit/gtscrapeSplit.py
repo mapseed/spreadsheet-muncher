@@ -15,16 +15,18 @@ studyNames = ["1977 Neighborhood Plan","1995 Needs Assessment","1998 Neighborhoo
 
 def splitting(targetCategory, short):
 	#Open the files using 'with' to make sure they close no matter what, assign the files to the variables csvinput, csvoutput
-	with open('Georgetown_Import.ods_GT_Matrix.csv', 'r') as csvinput, open(short + 'Comp.csv', 'w') as Compcsvoutput, open(short + 'Prog.csv', 'w') as Progcsvoutput, open(short + 'Dead.csv', 'w') as Deadcsvoutput:
+	with open('Georgetown_Import.ods_GT_Matrix.csv', 'r') as csvinput, open(short + 'Comp.csv', 'w') as Compcsvoutput, open(short + 'Prog.csv', 'w') as Progcsvoutput, open(short + 'NoProg.csv', 'w'), open(short + 'Dead.csv', 'w') as Deadcsvoutput:
 		#Create a dictionary reader to iterate through the rows of the input file, accessing by names in 1st row
 		reader = csv.DictReader(csvinput)
 		#Create a dictionary writer for the output files, with mapboxHeaders as the ordered list of keys
 		writerComp = csv.DictWriter(Compcsvoutput, mapboxHeaders, quoting=csv.QUOTE_MINIMAL)
 		writerProg = csv.DictWriter(Progcsvoutput, mapboxHeaders, quoting=csv.QUOTE_MINIMAL)
+		writerNoProg = csv.DictWriter(Deadcsvoutput, mapboxHeaders, quoting=csv.QUOTE_MINIMAL)
 		writerDead = csv.DictWriter(Deadcsvoutput, mapboxHeaders, quoting=csv.QUOTE_MINIMAL)
 		#Write mapboxHeaders as the 1st row of the output files
 		writerComp.writeheader()
 		writerProg.writeheader()
+		writerNoProg.writeheader()
 		writerDead.writeheader()
 
 		#Create a geocoder to geocode locations in Georgetown, Seattle, WA
@@ -84,6 +86,8 @@ def splitting(targetCategory, short):
 					writerComp.writerow({'Title':title, 'Description':description, 'Lat':lat, 'Long':lon})
 				elif row['Progress']=='In Progress':
 					writerProg.writerow({'Title':title, 'Description':description, 'Lat':lat, 'Long':lon})
+				elif row['Progress']=='No Progress':
+					writerNoProg.writerow({'Title':title, 'Description':description, 'Lat':lat, 'Long':lon})
 				elif row['Progress']=='Dead' or row['Progress']=='No Progress':
 					writerDead.writerow({'Title':title, 'Description':description, 'Lat':lat, 'Long':lon})
 
