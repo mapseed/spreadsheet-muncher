@@ -9,7 +9,7 @@ import csv
 from geopy.geocoders import GeocodeFarm as farm_geocoder
 from geopy.geocoders import GoogleV3 as google_geocoder
 
-IMPORT_CSV_FILE = 'Georgetown_Import.ods_GT_Matrix.csv'
+IMPORT_CSV_FILE = '../Georgetown_Import.ods_GT_Matrix.csv'
 
 # The bounding box of the viewport within which to bias geocode results
 # more prominently (only on GoogleV3).
@@ -38,9 +38,9 @@ def splitting(targetCategory, short):
     # Open the files using 'with' to make sure they close no matter what,
     # assign the files to the variables csvinput, csvoutput
     with open(IMPORT_CSV_FILE, 'r') as csvinput,\
-         open(short + 'Comp.csv', 'w') as Compcsvoutput,\
-         open(short + 'Prog.csv', 'w') as Progcsvoutput,\
-         open(short + 'NoProg.csv', 'w') as Deadcsvoutput:
+         open(short + '_complete.csv', 'w') as complete_output,\
+         open(short + '_prog.csv', 'w') as prog_output,\
+         open(short + '_no-prog-or-dead.csv', 'w') as no_prog_or_dead:
         # TODO: Categorize rows with 'Dead' progress into their own csv's:
         # open(short + 'Dead.csv', 'w') as Deadcsvoutput:
 
@@ -50,20 +50,19 @@ def splitting(targetCategory, short):
 
         # Create a dictionary writer for the output files, with MAPBOX_HEADERS
         # as the ordered list of keys
-        writerComp = csv.DictWriter(Compcsvoutput, MAPBOX_HEADERS,
+        complete_writer = csv.DictWriter(complete_output, MAPBOX_HEADERS,
                                     quoting=csv.QUOTE_MINIMAL)
-        writerProg = csv.DictWriter(Progcsvoutput, MAPBOX_HEADERS,
+        prog_writer = csv.DictWriter(prog_output, MAPBOX_HEADERS,
                                     quoting=csv.QUOTE_MINIMAL)
-        writerNoProg = csv.DictWriter(Deadcsvoutput, MAPBOX_HEADERS,
-                                      quoting=csv.QUOTE_MINIMAL)
-        writerDead = csv.DictWriter(Deadcsvoutput, MAPBOX_HEADERS,
-                                    quoting=csv.QUOTE_MINIMAL)
+        no_prog_or_dead_writer = csv.DictWriter(no_prog_or_dead,
+                                                MAPBOX_HEADERS,
+                                                quoting=csv.QUOTE_MINIMAL)
 
         # Write MAPBOX_HEADERS as the 1st row of the output files
-        writerComp.writeheader()
-        writerProg.writeheader()
-        writerNoProg.writeheader()
-        writerDead.writeheader()
+        complete_writer.writeheader()
+        prog_writer.writeheader()
+        no_prog_or_dead_writer.writeheader()
+        # writerDead.writeheader()
 
         # Create a geocoder to geocode locations in Georgetown, Seattle, WA
         # GoogleV3 uses 'bounds' kwarg on geocode instead of 'format_string'
@@ -145,10 +144,10 @@ def splitting(targetCategory, short):
                 # Write our new row to the appropriate CSV,
                 # depending on the value of the row's 'Progress'
                 {
-                    'Complete': lambda x: writerComp.writerow(x),
-                    'In Progress': lambda x: writerProg.writerow(x),
-                    'No Progress': lambda x: writerNoProg.writerow(x),
-                    'Dead': lambda x: writerDead.writerow(x)
+                    'Complete': lambda x: complete_writer.writerow(x),
+                    'In Progress': lambda x: prog_writer.writerow(x),
+                    'No Progress': lambda x: no_prog_or_dead_writer.writerow(x),
+                    'Dead': lambda x: no_prog_or_dead_writer.writerow(x)
                 }[row['Progress']](newRow)
 
 # For each category, we need to change these parameters with the target
