@@ -82,9 +82,11 @@ def splitting(targetCategory, short):
                 # input file
                 description = "<h1>%s</h1>\n" % (row['Title'])
                 for header in DESCRIPTION_HEADERS:
+                    description += "<h2>%s</h2>\n" % (header)
                     if row[header] != "":
-                        description += "<h2>%s</h2>\n<p>%s</p>\n" % \
-                                       (header, row[header])
+                        description += "<p>%s</p>\n" % (row[header])
+                    else:
+                        description += "<p><em>%s</em></p>\n" % ('Unknown')
 
                 # Add two blank lines, then a list of the studies for the
                 # current item
