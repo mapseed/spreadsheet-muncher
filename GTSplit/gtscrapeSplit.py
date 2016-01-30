@@ -25,7 +25,7 @@ MAPBOX_HEADERS = ['Title', 'Description', 'Lat', 'Long']
 # of output csv file.
 # The code will still work if these headers are rearranged or
 # different ones are chosen.
-DESCRIPTION_HEADERS = ['Goal', 'Status', 'Progress',
+DESCRIPTION_HEADERS = ['Goal', 'Progress',
                        'Progress Detail',
                        'Challenges and barriers', 'Next Steps']
 
