@@ -25,7 +25,7 @@ MAPBOX_HEADERS = ['Title', 'Description', 'Lat', 'Long']
 # of output csv file.
 # The code will still work if these headers are rearranged or
 # different ones are chosen.
-DESCRIPTION_HEADERS = ['Goal', 'Progress',
+DESCRIPTION_HEADERS = ['Goal', 'Status',
                        'Progress Detail',
                        'Challenges and barriers', 'Next Steps']
 
@@ -83,7 +83,7 @@ def splitting(targetCategory, short):
                 # input file
                 description = "<h1>%s</h1>\n" % (row['Title'])
                 for header in DESCRIPTION_HEADERS:
-                    description += "<h2>%s</h2>\n" % (header)
+                    description += "<h3>%s:</h3>\n" % (header)
                     if row[header] != "":
                         description += "<p>%s</p>\n" % (row[header])
                     else:
@@ -151,7 +151,7 @@ def splitting(targetCategory, short):
                     'In Progress': lambda x: prog_writer.writerow(x),
                     'No Progress': lambda x: no_prog_or_dead_writer.writerow(x),
                     'Dead': lambda x: no_prog_or_dead_writer.writerow(x)
-                }[row['Progress']](newRow)
+                }[row['Status']](newRow)
 
 # For each category, we need to change these parameters with the target
 # category and a shortened name for the csv file title
