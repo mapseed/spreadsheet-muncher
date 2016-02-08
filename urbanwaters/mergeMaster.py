@@ -26,55 +26,6 @@ def mergeRows(inFileName, outFileName):
 		#Write HEADERS as the 1st row of the output file
 		writer.writeheader()
 
-		#rows = []
-
-		#Version 1: I think this will skip over rows because the for loop automatically iterates
-		# for row in reader:
-
-		# 	# rows.append(row)
-		# 	# if (nextRow exists):
-		# 	# 	nextRow = reader.next()
-		# 	# while (nextRow and nextRow['Location ID'] == row['Location ID']):
-		# 	# 	rows.append(nextRow)
-		# 	# 	nextRow = reader.next() if nextRow exists else None
-
-		# 	#Create a list to store the current row and all subsequent rows to be merged
-		# 	rows = [row]
-		# 	#Try reading more rows - if the location id matches the current row,
-		# 	#add them to the list. If there are no more rows, do nothing.
-		# 	try:
-		# 		nextRow = reader.next()
-		# 		while (nextRow['Location ID'] == row['Location ID']):
-		# 			rows.append(nextRow)
-		# 			nextRow = reader.next()
-		# 	except StopIteration:
-		# 		#No more rows: Do nothing, and continue with remaining code
-		# 		pass
-
-		# 	print("Number of matching rows = %i\n" % len(rows))
-		# 	print(str(rows) + "\n")
-
-		# #Version 2: I think this fixes the 'skipping over rows' problem
-		# currentRow = None
-		# for row in reader:
-
-		# 	#Create a list to store the current row and all subsequent rows to be merged
-		# 	rows = [currentRow]
-		# 	nextRow = row
-		# 	#Try reading more rows - if the location id matches the current row,
-		# 	#add them to the list. If there are no more rows, do nothing.
-		# 	while (currentRow && nextRow['Location ID'] == currentRow['Location ID']):
-		# 		try:
-		# 			rows.append(nextRow)
-		# 			nextRow = reader.next()
-		# 		except StopIteration:
-		# 			#No more rows: Break out of loop
-		# 			break
-
-		# 	print(rows)
-
-		# 	currentRow = nextRow
-
 
 		#Version 3: Make it more like a do loop, and make iteration more explicit
 		end_of_csvinput = False
@@ -102,7 +53,7 @@ def mergeRows(inFileName, outFileName):
 				nextRow = reader.next()
 				row_count += 1
 				print("current, row count: %i\n" % row_count)
-				while (nextRow['Location ID'] == currentRow['Location ID']):
+				while (int(float(nextRow['Location ID'])) == int(float(currentRow['Location ID']))):
 					rows.append(nextRow)
 					nextRow = reader.next()
 					row_count += 1
