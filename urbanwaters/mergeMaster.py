@@ -18,6 +18,7 @@ DEFAULT_ORG = "{{Unlisted}}"
 DEFAULT_ID = "{{unlisted}}"
 DEFAULT_LAT = "47.5"
 DEFAULT_LONG = "-122.3"
+FAKE_LONGS = [DEFAULT_LONG, "122.3"]
 DEFAULT_URL = "n/a"
 
 #Each row of output will have a unique identifier in colum '#',
@@ -136,6 +137,12 @@ def mergeRows(rows, rowNumber):
 	newRow = rows[0].copy()
 	#Change newRow's number to the new value
 	newRow['#'] = rowNumber
+	#Record the sources that are being merged
+	sources = ["%s:%s" % (row['Source'], row['#']) for row in rows]
+	newRow['Source'] = ", ".join(sources)
+	print("Sources for Location ID %s:" % newRow['Location ID'], newRow['Source'])
+
+	#If there's a single row, just return the new row
 	if (numRows == 1):
 		return newRow
 	#elif (numRows == 2):
@@ -143,23 +150,26 @@ def mergeRows(rows, rowNumber):
 		#do something interesting...
 		newRow['STATUS'] = selectContent('STATUS', rows)
 		newRow['Title'] = selectContent('Title', rows, \
-			test=lambda row: row['Source']=='B')
+			default_val='first_val', test=lambda row: row['Source']=='B')
 		newRow['Address'] = selectContent('Address', rows)
 		newRow['ORGANIZATIONS'] = selectContent('ORGANIZATIONS', rows, \
-			default_val=DEFAULT_ORG)
+			test_val=DEFAULT_ORG, default_val=DEFAULT_ORG)
 		newRow['LAT'] = selectContent('LAT', rows, \
-			default_val=DEFAULT_LAT)
-		newRow['LONG'] = selectContent('LONG', rows, \
-			default_val=DEFAULT_LONG)
+			test_val=DEFAULT_LAT, default_val=DEFAULT_LAT)
+		newRow['LONG'] = selectContent('LONG', rows, empty_is_ok=True, \
+			default_val=DEFAULT_LONG, test=lambda row: row['LONG'] not in FAKE_LONGS)
 		newRow['PROJECT_DESCRIPTION'] = selectContent('PROJECT_DESCRIPTION', rows)
 		newRow['PROJECT_DATE'] = selectContent('PROJECT_DATE', rows)
 		newRow['END_DATE'] = selectContent('END_DATE', rows)
 		newRow['Id'] = selectContent('Id', rows, \
-			default_val=DEFAULT_ID)
+			test_val=DEFAULT_ID, default_val=DEFAULT_ID)
+		#Probably we should test whether we ended up using information from both sources
 		#newRow['Source'] = ???
 		newRow['URL'] = selectContent('URL', rows, \
-			default_val=DEFAULT_URL)
+			test_val=DEFAULT_URL, default_val=DEFAULT_URL)
+		#For now, just leave 'Slug' as whatever was in first row
 		#newRow['Slug'] = selectContent('Slug', rows)
+
 		return newRow
 	# else:
 	# 	#Not sure how to handle multiple rows yet...
@@ -167,23 +177,35 @@ def mergeRows(rows, rowNumber):
 	# 	return None
 
 #Choose one of two (or multiple) rows for the given header
-def selectContent(header, rows, test='dominant', default_val = "", empty_is_ok=False):
-	if test == 'dominant':
-		test = lambda row: row[header] != default_val
-		empty_is_ok=True
+def selectContent(header, rows, test='dominant', \
+	test_val="", default_val='first_val', \
+	empty_is_ok=False):
 
+	#By default, test whether row[header] is different from the test value
+	if test == 'dominant':
+		test = lambda row: row[header] != test_val
+		empty_is_ok=True #If no dominant field is found, use the default value
+
+	#By default, use the first value as the return value if no matches 
+	if default_val == 'first_val':
+		default_val = rows[0][header]
+
+	#Create a sublist of rows that match the given test
 	matches = [row for row in rows if test(row)]
 
+	#If there are no matches and that's ok, just return the default value
 	if (empty_is_ok and len(matches) == 0):
 		return default_val
 
+	#Otherwise, if there is not a unique match, alert the user
 	if (len(matches) != 1):
 		print("%i matches for '%s' in Location ID %s:" \
 			% (len(matches), header, rows[0]['Location ID']))
 		print("List of all %i row[%s]'s:\n" % (len(rows), header), [row[header] for row in rows], "\n")
 		print("%i matches:\n" % len(matches), [row[header] for row in matches],"\n")
+		#If no matches, return the default
 		if (len(matches) == 0):
-			return ""
+			return default_val
 	
 	#If there is one or more match, the first is returned
 	return matches[0][header]
