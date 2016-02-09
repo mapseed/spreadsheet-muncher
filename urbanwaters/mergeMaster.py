@@ -180,7 +180,8 @@ def selectContent(header, rows, test='dominant', default_val = "", empty_is_ok=F
 	if (len(matches) != 1):
 		print("%i matches for '%s' in Location ID %s:" \
 			% (len(matches), header, rows[0]['Location ID']))
-		print([row[header] for row in rows])
+		print("List of all %i row[%s]'s:\n" % (len(rows), header), [row[header] for row in rows], "\n")
+		print("%i matches:\n" % len(matches), [row[header] for row in matches],"\n")
 		if (len(matches) == 0):
 			return ""
 	
