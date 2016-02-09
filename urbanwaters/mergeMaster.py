@@ -28,14 +28,22 @@ def mergeRows(inFileName, outFileName):
 
 
 		#Version 3: Make it more like a do loop, and make iteration more explicit
+		
+		#Control flow boolean to keep track of whether we've reached end of input file
 		end_of_csvinput = False
-		row_count = 0
-		match_hist = Counter()
+
+		#Various counters to help with debugging the while loop that reads the file
+		row_count = 0 #The number of rows we've read
+		#To count # of groups of matching rows that have a given size
+		row_group_counter = Counter()
+		#To count 
+		id_counter = Counter()
 
 		#Try reading the header row and first row of data
 		try:
 			print("Header row:", reader.next().values(), "\n") #first row should contain headers
 			currentRow = reader.next() #2nd row is first row of data
+			currentID = currentRow['Location ID'] #store the ID for future use
 			row_count += 1 #Start counting rows of data
 			print("1st row, row count: %i\n" % row_count)
 		except StopIteration:
@@ -51,30 +59,34 @@ def mergeRows(inFileName, outFileName):
 			#that of the current row, continue adding rows to the list.
 			try:
 				nextRow = reader.next()
+				nextID = nextRow['Location ID']
 				row_count += 1
 				print("current, row count: %i\n" % row_count)
-				while (int(float(nextRow['Location ID'])) == int(float(currentRow['Location ID']))):
+				while (int(float(nextID)) == int(float(currentID))):
 					rows.append(nextRow)
 					nextRow = reader.next()
+					nextID = nextRow['Location ID']
 					row_count += 1
 					print("additional, row count: %i\n" % row_count)
 			except StopIteration:
 				end_of_csvinput = True #currentRow contains the last ID in the file
 				print("end of input, row count: %i\n" % row_count)
 
-			match_hist[len(rows)] += 1
+			row_group_counter[len(rows)] += 1
 
 			print("# of matching rows:", len(rows))
 			for row in rows:
 				print(row)
 
 			
-			print("Histogram of # of matching rows:", match_hist)
+			print("Histogram of # of matching rows:", row_group_counter)
 			print("row count: %i\n" % row_count)
-			print("Number of distinct ID's = %i" % sum(match_hist.values()))
-			print("Computed number of rows = %i\n" % sum([ k*v for (k,v) in match_hist.iteritems()]))
+			#print("Number of distinct decimal ID's = %i" % sum(row_group_counter.values()))
+			print("Number of distinct integer ID's = %i" % sum(row_group_counter.values()))
+			print("Computed number of rows = %i\n" % sum([ k*v for (k,v) in row_group_counter.iteritems()]))
 
 			currentRow = nextRow
+			currentID = currentRow['Location ID']
 
 
 
